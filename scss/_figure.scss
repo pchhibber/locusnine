@@ -1,0 +1,167 @@
+// _figure.scss
+.w-dtop-space {
+    margin-top: 20px;
+    @media all and (min-width: 992px) {
+        margin-top: 30px;
+    }
+}
+
+.w-mtop-space {
+    margin-top: 20px;
+    @media all and (min-width: 992px) {
+        margin-top: 0;
+    }
+}
+
+.pd-work-section {
+    @media all and (min-width: 992px) {
+        margin: 150px 0;
+    }
+}
+
+.some-of-work-section {
+    .container {
+        @media all and (min-width: 992px) {
+            position: relative;
+        }
+    }
+    .bg-icon {
+        display: none;
+        @media all and (min-width: 992px) {
+            display: block;
+            position: absolute;
+            &.icon-3 {
+                top: 16.5%;
+                left: -117px;
+                opacity: .3;
+            }
+            &.icon-2 {
+                top: 48.5%;
+                right: -55px;
+            }
+            &.icon-1 {
+                bottom: -70px;
+                left: -60px;
+            }
+        }
+    }
+}
+
+.figure-link {
+    display: block;
+    &~.figure-link {
+        margin: 20px 0 0;
+    }
+    .figure {
+        display: block;
+        text-align: center;
+        margin: 0;
+        transition: box-shadow .3s ease-in-out;
+        .img-fluid {
+            border-radius: 10px;
+            margin-bottom: 15px;
+            @media all and (min-width: 992px) {
+                margin: 0;
+                border-radius: 0 10px 10px 0;
+                width: 50%;
+                order: 2;
+            }
+        }
+        .logo {
+            @media all and (min-width: 992px) {
+                position: absolute;
+                top: 30px;
+                left: 25px;
+            }
+        }
+        figcaption {
+            @media all and (min-width: 992px) {
+                width: 50%;
+                padding: 25px;
+            }
+            .heading {
+                font-family: Arvo;
+                font-size: 24px;
+                line-height: 1.42;
+                letter-spacing: -0.4px;
+                color: #3d3d5d;
+                margin-bottom: 10px;
+            }
+            .desc {
+                font-size: 18px;
+                line-height: 1.33;
+                color: #6e6e85;
+            }
+        }
+        @media all and (min-width: 992px) {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            text-align: left;
+            border-radius: 10px;
+            box-shadow: 0 22px 44px 0 #e7e7eb;
+            background-color: #fff;
+            margin-top: 30px;
+        }
+
+        &:hover {
+            box-shadow : 0 22px 44px 0 rgba(255, 69, 163, 0.49);
+        }
+    }
+    &.column {
+        margin-bottom: 30px;
+        @media all and (min-width: 992px) {
+            height: 100%;
+            .figure {
+                height: 100%;
+                flex-direction: column;
+                margin: 0;
+                .img-fluid {
+                    margin: 0;
+                    border-radius: 10px 10px 0 0;
+                    width: 100%;
+                    order: 0;
+                }
+                figcaption {
+                    width: 100%;
+                    padding: 25px;
+                }
+                .logo {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    &.hover {
+        @media all and (min-width: 992px) {
+            text-align: center;
+            .figure {
+                position: relative;
+                display: inline-block;
+                .img-fluid {
+                    width: auto;
+                    border-radius: 10px;
+                }
+                figcaption {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: left;
+                    padding: 20px 40px;
+                    .heading {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.service-figure-btn {
+    margin-top: 50px;
+    background-image: linear-gradient(78deg, #5d63d3, #b986ff);
+}

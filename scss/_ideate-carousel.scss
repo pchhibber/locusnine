@@ -1,0 +1,31 @@
+// _ideate-carousel.scss
+.services-ideate-section {
+    .bg-icon {
+        display: none;
+        @media all and (min-width: 992px) {
+            display: block;
+            position: absolute;
+            &.icon-1 {
+                top: 55%;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.ideate-carousel {
+    text-align: center;
+    .box {
+        display: inline-block;
+        width: 255px;
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: 0 22px 44px 0 #e7e7eb;
+        background-color: #fff;
+        margin-bottom: 20px;
+        @media all and (min-width: 991px) {
+            width: 100%;
+        }
+    }
+}

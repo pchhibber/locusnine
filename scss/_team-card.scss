@@ -1,0 +1,215 @@
+// _team-card.scss
+.team-card-section {
+    .bg-icon {
+        display: none;
+
+        @media all and (min-width: 992px) {
+            display: block;
+            position: absolute;
+
+            &.icon-1 {
+                top: -7%;
+                right: 0;
+                z-index: -1;
+            }
+        }
+    }
+
+    .section-desc {
+        @media all and (min-width: 992px) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.team-card {
+    position: relative;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #6e6e85;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    // .animate-container {
+    //     position: relative;
+    //     overflow: hidden;
+    //     border-radius: 10px;
+    //     cursor: pointer;
+    // }
+    .img {
+        height: 350px;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+
+    .content-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 13px;
+    }
+
+    .content-layer {
+        top: 20%;
+        left: 50%;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        position: absolute;
+        border-radius: 10px;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        background-image: linear-gradient(211deg, #ffeadb, #faced7);
+    }
+
+    &:hover .content-layer {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+
+    &>.content {
+        @media all and (min-width: 992px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+            border-radius: 10px;
+        }
+    }
+
+    .tc-header {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+
+        .content {
+            flex: 0 0 75%;
+            width: 75%;
+
+            .name {
+                font-family: Arvo;
+                font-size: 24px;
+                letter-spacing: -0.4px;
+                color: #3d3d5d;
+            }
+        }
+    }
+
+    .tc-body {
+        .experience {
+            margin-top: 20px;
+
+            @media all and (min-width: 992px) {
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// flip card css starts
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 350px;
+    perspective: 1000px;
+    border-radius: 13px;
+    position: relative;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #6e6e85;
+    margin-bottom: 30px;
+    overflow: hidden;
+    .content-layer {
+        padding: 30px;
+    }
+    .tc-header {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+
+        .content {
+            flex: 0 0 75%;
+            width: 75%;
+
+            .name {
+                font-family: Arvo;
+                font-size: 24px;
+                letter-spacing: -0.4px;
+                color: #3d3d5d;
+            }
+        }
+    }
+
+    .tc-body {
+        .experience {
+            margin-top: 20px;
+
+            @media all and (min-width: 992px) {
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                width: 100%;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width: 1200px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 13px;
+    background-image: linear-gradient(211deg, #ffeadb, #faced7);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 13px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        // object-fit: cover;
+        border-radius: 13px;
+    }
+}
+
+.flip-card-back {
+    background-image: linear-gradient(211deg, #ffeadb, #faced7);
+    transform: rotateY(180deg);
+    border-radius: 13px;
+}

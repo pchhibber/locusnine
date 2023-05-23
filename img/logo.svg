@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="161" height="45" viewBox="0 0 161 45">
+    <g fill="none" fill-rule="evenodd">
+        <path fill-rule="nonzero" stroke="#00F" stroke-width="3" d="M8.5 8.5h27v27h-27zM1 43.426L43.426 1"/>
+        <text fill="#00F" font-family="Cabin-Regular, Cabin" font-size="29" transform="translate(1 1)">
+            <tspan x="44" y="42">locusnine</tspan>
+        </text>
+    </g>
+</svg>

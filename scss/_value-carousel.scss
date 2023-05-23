@@ -1,0 +1,163 @@
+// _value-carousel.scss
+.value-carousel-section {
+    .container {
+        position: relative;
+    }
+    .bg-icon {
+        display: none;
+        @media all and (min-width: 992px) {
+            display: block;
+            position: absolute;
+            &.icon-1 {
+                right: 0;
+                bottom: 0;
+                transform: translate(55px, 66px);
+                z-index: -1;
+            }
+            &.icon-2 {
+                left: 0;
+                bottom: 0;
+                opacity: 0.6;
+                transform: translate(143px, 116px);
+            }
+            &.icon-3 {
+                top: 17%;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+    .value-carousel {
+        margin-left: -15px;
+        margin-right: -15px;
+        @media all and (min-width: 992px) {
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .item {
+            @media all and (min-width: 992px) {
+                width: 20%;
+                flex: 0 0 20%;
+            }
+            .content {
+                font-family: Arvo;
+                font-size: 14px;
+                line-height: 1.43;
+                color: #2681a9;
+                padding: 50px 20px;
+                border-radius: 10px;
+                text-align: center;
+                margin-left: 5px;
+                margin-right: 5px;
+                i {
+                    font-size: 12px;
+                    font-style: italic;
+                }
+                @media all and (min-width: 992px) {
+                    border-radius: 0;
+                    height: 100%;
+                    padding-top: 160px;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .title {
+                    font-size: 24px;
+                    letter-spacing: -0.4px;
+                    color: #2681a9;
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                    @media all and (min-width: 992px) {
+                        min-height: 68px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                p {
+                    margin-top: 20px;
+                }
+                .tag-line {
+                    font-family: Cabin;
+                    font-size: 18px;
+                    line-height: 1.33;
+                    color: #9e9eae;
+                }
+                &.purple {
+                    .title {
+                        color: #fff;
+                    }
+                    .tag-line {
+                        color: #fff;
+                    }
+                    p {
+                        color: #fff;
+                    }
+                    background-image: linear-gradient(7deg, #5d63d3, #b986ff);
+                }
+                &.cream {
+                    .title {
+                        color: #2681a9;
+                    }
+                    .tag-line {
+                        color: #9e9eae;
+                    }
+                    p {
+                        color: #2681a9;
+                    }
+                    background-image: linear-gradient(191deg, #ffeadb, #faced7);
+                }
+                &.pink {
+                    .title {
+                        color: #fff;
+                    }
+                    .tag-line {
+                        color: #fff;
+                    }
+                    p {
+                        color: #fff;
+                    }
+                    background-image: linear-gradient(14deg, #ffcfaa, #fa6eb9);
+                }
+                &.white {
+                    .title {
+                        color: #2baa8c;
+                    }
+                    .tag-line {
+                        color: #9e9eae;
+                    }
+                    p {
+                        color: #2baa8c;
+                    }
+                    background-image: linear-gradient(193deg, #fff, #c2e7f9);
+                }
+                &.blue {
+                    .title {
+                        color: #fff;
+                    }
+                    .tag-line {
+                        color: #fff;
+                    }
+                    p {
+                        color: #fff;
+                    }
+                    background-image: linear-gradient(351deg, #37cedb, #3488ed);
+                }
+            }
+        }
+        @media all and (max-width: 992px) {
+            .slick-track {
+                display: flex;
+                .item {
+                    height: auto;
+                    .content {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

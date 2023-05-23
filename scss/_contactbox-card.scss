@@ -1,0 +1,90 @@
+// _contactbox-card.scss
+.contact-box-container {
+    .bg-icon {
+        display: none;
+        @media all and (min-width: 992px) {
+            display: block;
+            position: absolute;
+            &.icon-1 {
+                top: 55%;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.contactbox-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 22px 44px 0 #e7e7eb;
+    background-color: #fff;
+    margin-bottom: 20px;
+    @media all and (min-width: 992px) {
+        margin-bottom: 30px;
+        min-height: 215px;
+    }
+    .title {
+        font-family: Arvo;
+        font-size: 36px;
+        letter-spacing: -0.4px;
+        color: #3d3d5d;
+        margin-top: 20px;
+    }
+    .desc {
+        font-size: 18px;
+        line-height: 1.33;
+        color: #3d3d5d;
+        margin-top: 10px;
+    }
+    .link {
+        display: block;
+        font-size: 24px;
+        line-height: 1;
+        color: #8000ff;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+    &.highlight {
+        background-image: linear-gradient(61deg, #5d63d3, #b986ff);
+        box-shadow: 0 22px 44px 0 rgba(138, 116, 233, 0.4);
+        .title,
+        .desc {
+            color: #fff;
+        }
+    }
+    &.c-form {
+        .title {
+            font-family: Cabin;
+        }
+        .form {
+            margin-top: 20px;
+        }
+        .title {
+            font-size: 30px;
+            letter-spacing: -0.33px;
+            margin-top: 0;
+        }
+        .btn {
+            width: auto;
+            box-shadow: 0 22px 44px 0 rgba(255, 0, 255, 0.26);
+            @media all and (min-width: 992px) {
+                background-image: linear-gradient(106deg, #ffc300, #ff00ff);
+            }
+        }
+        @media all and (min-width: 992px) {
+            padding: 30px 70px;
+            .desc {
+                margin-bottom: 30px;
+            }
+            textarea {
+                height: 116px;
+            }
+        }
+    }
+    .social-list {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}

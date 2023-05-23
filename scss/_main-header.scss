@@ -1,0 +1,112 @@
+// _main-header.scss
+.main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 40px;
+    z-index: 99;
+    transition: all 0.2s ease-in;
+    @media all and (min-width: 992px) {
+        padding-top: 50px;
+    }
+    .container {
+        position: relative;
+        @media all and (min-width: 992px) {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            .logo {
+                path {
+                    stroke: #0000ff;
+                }
+                text {
+                    fill: #0000ff;
+                }
+            }
+            .main-menu-list {
+                display: flex;
+                align-items: center;
+                li {
+                    padding: 0 10px;
+                    a {
+                        display: block;
+                        font-size: 14px;
+                        line-height: 1.43;
+                        letter-spacing: 0.4px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        &.btn {
+                            background-image: linear-gradient(107deg, #ffc300, #ff00ff);
+                            box-shadow: 0 22px 44px 0 rgba(255, 0, 255, 0.84);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menu-btn {
+        position: absolute;
+        top: 19px;
+        right: 20px;
+    }
+    &.inner-page {
+        @media all and (min-width: 992px) {
+            .logo {
+                path {
+                    stroke: #fff;
+                }
+                text {
+                    fill: #fff;
+                }
+            }
+            .main-menu-list {
+                li {
+                    a {
+                        &.btn {
+                            margin-left: 20px;
+                            background-image: linear-gradient(70deg, #5d63d3, #b986ff);
+                            box-shadow: 0 22px 44px 0 #fc248d;
+                            &.blue-btn {
+                                background-image: linear-gradient(285deg, #37cedb, #3488ed);
+                                box-shadow: 0 22px 44px 0 #774fde;
+                            }
+                            &.green-btn {
+                                background-image: linear-gradient(71deg, #39abc5, #a8eb9d);
+                                box-shadow: 0 22px 44px 0 #b467c8;
+                            }
+                            &.pink-btn {
+                                background-image: linear-gradient(68deg, #ffcfaa, #fa6eb9);
+                                box-shadow: 0 22px 44px 0 #36a9e5;
+                            }
+                            &.purple-btn {
+                                background-image: linear-gradient(51deg, #5d63d3, #b986ff);
+                                box-shadow: 0 22px 44px 0 #d79260;
+                            }
+                            &.no-shadow {
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-sticky {
+    position: fixed;
+    background-color: #7f06ff;
+    padding: 25px 0;
+    transition: all 0.1s ease-in;
+    .logo {
+        path {
+            stroke: #fff !important;
+        }
+        text {
+            stroke: #fff !important;
+            fill: #fff !important;
+        }
+    }
+}

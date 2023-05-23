@@ -1,0 +1,91 @@
+// _learn-blog.scss
+.learn-blog-section {
+    .container {
+        position: relative;
+    }
+    .bg-icon {
+        display: none;
+        @media all and (min-width: 992px) {
+            display: block;
+            position: absolute;
+            &.icon-1 {
+                top: 39%;
+                right: -50px;
+            }
+            &.icon-2 {
+                top: 15%;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.learn-blog {
+    padding: 0 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0 22px 44px 0 #e7e7eb;
+    background-color: #fff;
+    margin-bottom: 20px;
+    overflow: hidden;
+    @media all and (min-width: 992px) {
+        margin-bottom: 0;
+        height: 100%;
+    }
+    .img {
+        margin: 0 -30px 20px;
+        overflow: hidden;
+        @media all and (min-width: 992px) {
+            margin-bottom: 30px;
+        }
+        .img-fluid {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        img {
+            -webkit-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+    }
+    .title {
+        font-family: Arvo;
+        font-size: 24px;
+        letter-spacing: -0.4px;
+        color: #3d3d5d;
+    }
+    .desc {
+        font-size: 14px;
+        line-height: 1.43;
+        color: #6e6e85;
+        margin-top: 20px;
+        @media all and (min-width: 992px) {
+            min-height: 123px;
+        }
+    }
+    .views {
+        font-size: 14px;
+        line-height: 1.43;
+        color: #9e9eae;
+        margin-top: 35px;
+    }
+    &.no-img {
+        padding-top: 90px;
+        @media all and (min-width: 992px) {
+            height: calc(50% - 15px);
+        }
+    }
+    &.green {
+        background-image: linear-gradient(60deg, #39abc5, #a8eb9d);
+        @media all and (min-width: 992px) {
+            margin-top: 30px;
+        }
+        .title,
+        .views {
+            color: #fff;
+        }
+    }
+    &:hover .img img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}

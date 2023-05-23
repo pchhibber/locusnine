@@ -1,0 +1,288 @@
+// _banner-section.scss
+.banner-section {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 140px 0 100px;
+    background: url(../img/banner-bg.svg) no-repeat center 100%;
+    background-size: cover;
+    @media all and (min-width: 992px) {
+        background-position-x: right;
+        padding: 200px 0 140px;
+        background-size: auto;
+        background-position: right bottom;
+    }
+    @media all and (min-width: 1300px) {
+        background-size: 70%;
+    }
+    .bg-icon {
+        display: none;
+        @media all and (min-width: 992px) {
+            display: block;
+            position: absolute;
+            &.icon-4 {
+                top: 0;
+                right: 0;
+            }
+            &.icon-3 {
+                bottom: 90px;
+                left: 30%;
+            }
+            &.icon-2 {
+                top: 18.5%;
+                left: 0;
+            }
+            &.icon-1 {
+                top: 97px;
+                right: 55px;
+                opacity: .3;
+            }
+        }
+    }
+    .banner-article {
+        @media all and (min-width: 992px) {
+            color: #6e6e85;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            .img {
+                width: 70%;
+                order: 2;
+                transform: translateX(70px);
+            }
+            .content {
+                width: 30%;
+                .btn {
+                    position: relative;
+                    font-size: 14px;
+                    line-height: 1.43;
+                    text-transform: uppercase;
+                    color: #3d3d5d;
+                    margin-top: 30px;
+                    width: auto;
+                    box-shadow: 0 22px 44px 0 rgba(255, 0, 255, 0.19);
+                    background: linear-gradient(107deg, #ffc300, #ff00ff);
+                }
+            }
+        }
+    }
+    .section-heading {
+        margin: 20px;
+        color: #fff;
+        @media all and (min-width: 992px) {
+            color: #3d3d5d;
+            text-align: left;
+            margin: 0 0 20px;
+            font-weight: 500;
+        }
+    }
+    .desc {
+        font-size: 18px;
+        line-height: 1.33;
+        @media all and (min-width: 992px) {
+            font-size: 24px;
+            letter-spacing: -0.4px;
+        }
+    }
+    .desc1 {
+        @media all and (min-width: 992px) {
+            font-size: 18px !important;
+            font-weight: normal !important;
+            letter-spacing: normal !important;
+        }
+    }
+    .btn {
+        margin-top: 20px;
+        background-image: linear-gradient(107deg, #ffc300, #ff00ff);
+    }
+    &.inner-page {
+        padding-bottom: 136px;
+        @media all and (min-width: 992px) {
+            background-size: 100%;
+            .section-heading {
+                color: #fff;
+                text-align: center;
+            }
+            .content {
+                width: 100%;
+                text-align: center;
+            }
+            &.full {
+                padding-top: 140px;
+                padding-bottom: 0;
+                .banner-article {
+                    display: block;
+                    .content {
+                        position: absolute;
+                        bottom: 117px;
+                    }
+                    .expand-img {
+                        width: calc(100% + 322px);
+                        transform: translateX(-106px);
+                    }
+                }
+            }
+        }
+        .desc {
+            font-family: Arvo;
+            @media all and (min-width: 992px) {
+                color: #fff;
+                font-size: 24px;
+                letter-spacing: -0.4px;
+            }
+        }
+    }
+    &.work {
+        background-image: linear-gradient(19deg, #39abc5, #a8eb9d);
+        @media all and (min-width: 992px) {
+            background-image: linear-gradient(61deg, #39abc5, #a8eb9d);
+            .bg-icon {
+                @media all and (min-width: 992px) {
+                    &.icon-2 {
+                        top: 50%;
+                    }
+                }
+            }
+        }
+    }
+    &.services {
+        background-image: linear-gradient(19deg, #6f4de2, #ff7c7c);
+        @media all and (min-width: 992px) {
+            background-image: linear-gradient(61deg, #6f4de2, #ff7c7c);
+        }
+    }
+    &.careers {
+        padding-bottom: 30px;
+        background-image: linear-gradient(194deg, #ff90d7, #906efa);
+        .btn {
+            background-image: linear-gradient(283deg, #81eaec, #3488ed);
+        }
+        @media all and (min-width: 992px) {
+            padding-top: 140px;
+            padding-bottom: 0;
+            background-image: linear-gradient(232deg, #ff90d7, #906efa);
+            .bg-icon {
+                &.icon-2 {
+                    top: 45%;
+                }
+            }
+            .banner-article {
+                .section-heading {
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+                .desc {
+                    text-align: left;
+                    letter-spacing: -0.4px;
+                }
+                .d-img {
+                    width: 130%;
+                    transform: translateX(-3%);
+                }
+                .btn {
+                    color: #fff;
+                    background-image: linear-gradient(283deg, #81eaec, #3488ed);
+                    box-shadow: 0 22px 44px 0 #926ff9;
+                    border: 0;
+                }
+                .content {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    &.about {
+        padding-bottom: 10px;
+        background-image: linear-gradient(347deg, #37cedb, #3488ed);
+        .section-heading {
+            span {
+                display: block;
+            }
+        }
+        @media all and (min-width: 992px) {
+            padding-top: 424px;
+            padding-bottom: 50px;
+            background-image: linear-gradient(309deg, #37cedb, #3488ed);
+            .bg-icon {
+                &.icon-2 {
+                    top: 45%;
+                }
+            }
+            .section-heading {
+                span {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    &.contact {
+        padding-bottom: 30px;
+        background-image: linear-gradient(194deg, #ffb782, #eb4878);
+        @media all and (min-width: 992px) {
+            padding-top: 424px;
+            padding-bottom: 50px;
+            background-image: linear-gradient(236deg, #ffb782, #eb4878);
+            .bg-icon {
+                &.icon-2 {
+                    top: 45%;
+                }
+            }
+        }
+    }
+    &.p-details {
+        padding-bottom: 30px;
+        background-image: linear-gradient(9deg, #46e5f2, #9e66ff);
+        @media all and (min-width: 992px) {
+            background-image: linear-gradient(40deg, #46e5f2, #9e66ff);
+            padding-top: 140px;
+            padding-bottom: 0;
+            .section-heading {
+                text-align: left;
+                margin-bottom: 10px;
+            }
+            .desc {
+                text-align: left;
+            }
+            .d-img {
+                box-shadow: 0 -22px 44px 0 rgba(128, 0, 255, 0.19);
+            }
+            .bg-icon {
+                &.icon-2 {
+                    top: 45%;
+                }
+            }
+        }
+    }
+    .slick-dots {
+        bottom: -60px;
+        @media all and (min-width: 992px) {
+            bottom: -200px;
+        }
+        li {
+            width: 10px;
+            height: 10px;
+            &.slick-active {
+                button {
+                    background: #9e9eae;
+                }
+            }
+            button {
+                width: 10px;
+                height: 10px;
+                background: #e7e7eb;
+                border-radius: 50%;
+            }
+        }
+    }
+    .homepage-carouse {
+        @media all and (min-width: 992px) {
+            margin-right: -70px;
+            margin-left: -22px;
+            margin-bottom: -70px;
+            .content {
+                padding-left: 40px;
+                padding-bottom: 70px;
+            }
+        }
+    }
+}

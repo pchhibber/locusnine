@@ -1,0 +1,49 @@
+// _benefits-carousel.scss
+.benefits-carousel {
+    margin-bottom: 60px !important;
+    @media all and (min-width: 992px) {
+        margin-bottom: 0;
+    }
+    .content {
+        text-align: center;
+        @media all and (min-width: 992px) {
+            margin-bottom: 30px;
+        }
+        .title {
+            font-family: Arvo;
+            font-size: 24px;
+            letter-spacing: -0.4px;
+            color: #3d3d5d;
+            margin-top: 40px;
+        }
+        .desc {
+            font-size: 18px;
+            line-height: 1.33;
+            margin-top: 10px;
+            color: #6e6e85;
+        }
+        .icon {
+            img {
+                display: inline-block;
+            }
+        }
+    }
+    .slick-dots {
+        margin-bottom: -10px;
+        li {
+            width: 10px;
+            height: 10px;
+            &.slick-active {
+                button {
+                    background: #9e9eae;
+                }
+            }
+            button {
+                width: 10px;
+                height: 10px;
+                background: #e7e7eb;
+                border-radius: 50%;
+            }
+        }
+    }
+}

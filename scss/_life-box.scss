@@ -1,0 +1,76 @@
+// _life-box.scss
+.careers-life-section {
+    .bg-icon {
+        display: none;
+        @media all and (min-width: 992px) {
+            display: block;
+            position: absolute;
+            &.icon-1 {
+                top: 30%;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.life-box-container {
+    margin-top: 50px;
+    @media all and (max-width: 991px) {
+        margin-top: 0;
+        div.row {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+        div[class*="col"] {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    .fun1 {
+        background-image: url('./../img/fun1.jpg')
+    }
+    .fun2 {
+        background-image: url('./../img/fun2.jpg')
+    }
+    .fun3 {
+        background-image: url('./../img/fun3.jpg')
+    }
+    .fun4 {
+        background-image: url('./../img/fun4.jpg')
+    }
+    .fun5 {
+        background-image: url('./../img/fun5.jpg')
+    }
+    .fun6 {
+        background-image: url('./../img/fun6.jpg')
+    }
+    .fun7 {
+        background-image: url('./../img/fun7.jpg')
+    }
+    .fun8 {
+        background-image: url('./../img/fun8.jpg')
+    }
+    .fun9 {
+        background-image: url('./../img/fun9.jpg')
+    }
+    .fun10 {
+        background-image: url('./../img/fun10.jpg')
+    }
+}
+
+.life-box {
+    height: 102px;
+    border-radius: 10px;
+    border: solid 1px #e7e7eb;
+    background-color: #fff;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    @media all and (min-width: 992px) {
+        height: 255px;
+        margin-bottom: 30px;
+    }
+}

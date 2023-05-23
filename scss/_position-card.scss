@@ -1,0 +1,103 @@
+// _position-card.scss
+.careers-open-positions-section {
+    .bg-icon {
+        display: none;
+        @media all and (min-width: 992px) {
+            display: block;
+            position: absolute;
+            &.icon-1 {
+                top: -25%;
+                right: 0;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.position-card {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.56;
+    color: #6e6e85;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 22px 44px 0 #e7e7eb;
+    background-color: #fff;
+    margin-bottom: 20px;
+    .title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1;
+        color: #3d3d5d;
+        &~.title {
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+    }
+    .attached {
+        display: block;
+        font-size: 18px;
+        color: #6e6e85;
+        cursor: pointer;
+        padding: 14px 20px;
+        border-radius: 5px;
+        border: solid 1px #e7e7eb;
+        background-color: #e7e7eb;
+    }
+    .form {
+        margin-top: 20px;
+        .title {
+            margin-bottom: 20px;
+        }
+        .btn {
+            margin-top: 0;
+        }
+    }
+    p {
+        margin-top: 10px;
+    }
+    .btn {
+        position: relative;
+        font-size: 14px;
+        line-height: 1.43;
+        text-transform: uppercase;
+        color: #3d3d5d;
+        margin-top: 30px;
+        background: #fff;
+        width: auto;
+        span {
+            position: relative;
+            z-index: 1;
+            transition: color .3s ease-in-out;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(107deg, #ffc300, #ff00ff);
+            border-radius: 28px;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            right: 1px;
+            bottom: 1px;
+            background: #fff;
+            border-radius: 28px;
+            transition: opacity .3s ease-in-out;
+        }
+        &:hover {
+            span {
+                color: #fff;
+            }
+            &:after {
+                opacity: 0;
+            }
+        }
+    }
+}

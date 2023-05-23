@@ -1,0 +1,61 @@
+// _client-list.scss
+.client-section-container{
+    position: relative;
+    .client-section {
+        @media all and (min-width: 992px) {
+            
+            padding: 50px;
+            box-shadow: 12px 12px 40px 0 rgba(121, 121, 121, 0.3);
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+        }
+    }
+            .bg-icon {
+                display: none;
+                @media all and (min-width: 992px) {
+                    display: block;
+                    position: absolute;
+                    &.icon-1 {
+                        left: -40px;
+                        bottom: -30px;
+                        transform: translate(-55px, 54px);
+                        z-index: -1;
+                    }
+                }
+            }
+}
+
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        flex: 0 0 50%;
+        padding: 22px 10px;
+        @media all and (min-width: 992px) {
+            width: 20%;
+            flex: 0 0 20%;
+        }
+        &:last-child {
+            width: 100%;
+            flex: 100%;
+            @media all and (min-width: 992px) {
+                width: 20%;
+                flex: 0 0 20%;
+            }
+        }
+        a {
+            display: block;
+            text-align: center;
+            font-size: 24px;
+            line-height: 1.33;
+            color: #8000ff;
+            img {
+                filter: grayscale(1);
+            }
+        }
+    }
+}

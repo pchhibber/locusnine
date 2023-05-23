@@ -1,0 +1,107 @@
+// _main-footer.scss
+.main-footer {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #fff;
+    @media all and (min-width: 992px) {
+        position: relative;
+        text-align: left;
+        padding: 80px 0 100px;
+        background: url("../img/footer-bg-1.svg") no-repeat center bottom #fff;
+    }
+    .bg-icon {
+        display: none;
+        @media all and (min-width: 992px) {
+            display: block;
+            position: absolute;
+            &.icon-1 {
+                transform: translateY(-100%);
+            }
+            &.icon-2 {
+                top: 113px;
+                right: 75px;
+                opacity: .5;
+            }
+            &.icon-3 {
+                top: 45%;
+                left: 2.9%;
+                opacity: .5;
+            }
+        }
+    }
+    .contact-details {
+        text-align: left;
+    }
+    .footer-heading {
+        font-family: Arvo;
+        font-size: 24px;
+        letter-spacing: -0.4px;
+        color: #3d3d5d;
+        margin-bottom: 18px;
+        margin-top: 30px;
+    }
+    .list-unstyled {
+        li {
+            a {
+                font-size: 18px;
+                line-height: 1.56;
+                color: #6e6e85;
+            }
+        }
+    }
+    .desc {
+        font-size: 18px;
+        line-height: 1.33;
+        color: #6e6e85;
+        margin-top: 20px;
+    }
+    .reach-text {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #6e6e85;
+    }
+    .form {
+        margin-top: 30px;
+        @media all and (min-width: 992px) {
+            width: 350px;
+        }
+        .btn {
+            box-shadow: 0 22px 44px 0 rgba(255, 0, 255, 0.26);
+            @media all and (min-width: 992px) {
+                width: auto;
+                background-image: linear-gradient(106deg, #ffc300, #ff00ff);
+            }
+        }
+    }
+    .address {
+        font-size: 18px;
+        line-height: 1.56;
+        color: #6e6e85;
+    }
+    .map {
+        width: 100%;
+        height: 142px;
+        background: #e7e7eb;
+        margin-top: 20px;
+    }
+    .footer-bottom {
+        font-size: 14px;
+        line-height: 1.43;
+        color: #6e6e85;
+        padding-bottom: 20px;
+        @media all and (min-width: 992px) {
+            margin-top: 30px;
+        }
+        .list-unstyled {
+            li {
+                display: inline-block;
+                padding: 20px 10px;
+                a {
+                    font-size: 14px;
+                    line-height: 1.43;
+                    color: #6e6e85;
+                }
+            }
+        }
+    }
+}

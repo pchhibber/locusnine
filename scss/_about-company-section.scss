@@ -1,0 +1,44 @@
+// _about-company-section.scss
+.about-company-section {
+    .section-desc {
+        @media all and (min-width: 991px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.who-we-are {
+    .img-wrapper {
+        margin: auto;
+        text-align: center;
+        img {
+            width: 80%;
+        }
+        @media all and (max-width: 991px) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            img {
+                width: 70%;
+                margin: auto;
+            }
+        }
+        @media all and (max-width: 600px) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+    .desc {
+        font-family: Cabin;
+        font-size: 20px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: -0.33px;
+        color: var(--battleship-grey);
+    }
+}

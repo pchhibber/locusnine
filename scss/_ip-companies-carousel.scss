@@ -1,0 +1,61 @@
+// _inner-page-companies-carousel.scss
+.inner-page-companies-carousel {
+    margin-bottom: 60px !important;
+    .item {
+        opacity: .5;
+        &.slick-active {
+            opacity: 1;
+        }
+    }
+    .content {
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: -0.33px;
+        padding: 106px 20px 40px;
+        border-radius: 10px;
+        margin: 0 15px;
+        color: #6e6e85;
+        box-shadow: 0 12px 30px 0 rgba(121, 121, 121, 0.2);
+        background: url('../img/quote-highlight.svg') no-repeat 23px 39px rgba(255, 255, 255, 0.95);
+        background-size: 42px;
+        @media all and (min-width: 992px) {
+            padding: 117px 50px 50px;
+            background-position-x: 50px;
+            margin: 50px 15px;
+            font-size: 24px;
+            line-height: 1.42;
+            letter-spacing: -0.4px;
+            background-position-x: 50px;
+        }
+        .text {
+            font-family: Arvo;
+            color: #3d3d5d;
+        }
+        .name {
+            font-size: 18px;
+            line-height: 1.33;
+            margin-top: 20px;
+            color: #9e9eae;
+            @media all and (min-width: 992px) {
+                margin-top: 70px;
+            }
+        }
+    }
+    .slick-dots {
+        li {
+            width: 10px;
+            height: 10px;
+            &.slick-active {
+                button {
+                    background: #bb7bec;
+                }
+            }
+            button {
+                width: 10px;
+                height: 10px;
+                background: #e7e7eb;
+                border-radius: 50%;
+            }
+        }
+    }
+}

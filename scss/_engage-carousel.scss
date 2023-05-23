@@ -1,0 +1,163 @@
+// _engage-carousel.scss
+.engage-carousel-section {
+    @media all and (min-width: 992px) {
+        .container {
+            position: relative;
+        }
+    }
+    .bg-icon {
+        display: none;
+        @media all and (min-width: 992px) {
+            display: block;
+            position: absolute;
+            &.icon-1 {
+                top: 46.5%;
+                left: 0;
+                opacity: .3;
+            }
+            &.icon-2 {
+                top: 63%;
+                right: -55px;
+            }
+            &.icon-3 {
+                bottom: -60px;
+                left: 320px;
+            }
+        }
+    }
+}
+
+.engage-carousel {
+    margin-top: -30px;
+    @media all and (min-width: 992px) {
+        margin-top: -50px;
+    }
+    .content {
+        text-align: center;
+        margin: 87px 15px 50px;
+        border-radius: 10px;
+        box-shadow: 0 22px 15px 0 rgba(231, 231, 235, 0.2);
+        background-color: #ffffff;
+        padding: 0 50px 60px;
+        transition: all .3s ease-in-out;
+        @media all and (min-width: 992px) {
+            height: calc(100% - 107px);
+            margin: 107px 0 0;
+        }
+        .icon {
+            position: relative;
+            margin-top: -50px;
+            display: inline-block;
+            width: 115px;
+            height: 115px;
+            font-family: Enter-The-Grid;
+            font-size: 70px;
+            color: #3d3d5d;
+            line-height: 1.85;
+            text-indent: 8px;
+            background: url('../img/box-polygon.svg') no-repeat center center;
+            background-size: cover;
+        }
+        .title {
+            font-family: Arvo;
+            font-size: 24px;
+            letter-spacing: -0.4px;
+            margin-top: 30px;
+            background-image: linear-gradient(107deg, #ffc300, #ff00ff);
+            background-image: -webkit-linear-gradient(107deg, #ffc300, #ff00ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+        .list-unstyled {
+            margin-top: 20px;
+            li {
+                font-size: 18px;
+                line-height: 1.56;
+                color: #6e6e85;
+                strong {
+                    color: #3d3d5d;
+                    font-weight: 600;
+                }
+            }
+        }
+        .list-container {
+            @media all and (min-width: 992px) {
+                display: flex;
+                justify-content: center;
+                &.d-2 {
+                    .list-unstyled {
+                        width: 50%;
+                        flex: 0 0 50%;
+                    }
+                }
+                &.d-5 {
+                    .list-unstyled {
+                        width: 20%;
+                        flex: 0 0 20%;
+                    }
+                }
+            }
+        }
+        @media all and (min-width: 992px) {
+            &:hover {
+                box-shadow: 0 22px 44px 0 rgba(255, 69, 163, 0.49);
+                background-image: linear-gradient(134deg, #ffc300, #ff00ff);
+                .icon {
+                    background-image: url('../img/box-polygon-black.svg');
+                    span {
+                        background-image: linear-gradient(134deg, #ffc300, #ff00ff);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+                .title,
+                .list-unstyled li,
+                .list-unstyled li strong {
+                    color: #fff;
+                    -webkit-text-fill-color: #fff;
+                }
+            }
+        }
+    }
+    .slick-dots {
+        bottom: 0;
+        li {
+            width: 10px;
+            height: 10px;
+            &.slick-active {
+                button {
+                    background: #9e9eae;
+                }
+            }
+            button {
+                width: 10px;
+                height: 10px;
+                background: #e7e7eb;
+                border-radius: 50%;
+            }
+        }
+    }
+    .slick-arrow {
+        width: 48px;
+        height: 48px;
+        box-shadow: 0 22px 44px 0 #e7e7eb;
+        background-color: #fff;
+        border-radius: 50%;
+        z-index: 5;
+        &.slick-prev {
+            left: 40px;
+            width: 48px;
+            height: 48px;
+            background: url(../img/slick-prev.svg) no-repeat center center;
+        }
+        &.slick-next {
+            right: 40px;
+            width: 48px;
+            height: 48px;
+            background: url(../img/slick-next.svg) no-repeat center center;
+        }
+    }
+}
